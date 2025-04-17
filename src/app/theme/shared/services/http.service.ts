@@ -24,10 +24,7 @@ export class HttpService {
   getProductList(): Observable<Product[]> {
     this.loadingService.show();
     return this.http.get<Product[]>(this.GET_ALL_PRODUCTS).pipe(
-      finalize(() => {
-        this.loadingService.hide()
-        console.log()
-      })
+      finalize(() => this.loadingService.hide())
     );
   }
 
