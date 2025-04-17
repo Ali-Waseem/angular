@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 // project import
 import { AdminComponent } from './theme/layout/admin/admin.component';
-import { GuestComponent } from './theme/layout/guest/guest.component';
 
 const routes: Routes = [
   {
@@ -13,17 +12,17 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/analytics',
+        redirectTo: '/dashboard',
         pathMatch: 'full'
       },
       {
-        path: 'analytics',
-        loadComponent: () => import('./demo/dashboard/dash-analytics.component')
+        path: 'dashboard',
+        loadComponent: () => import('./demo/dashboard/dash-analytics.component').then(m => m.default) 
       },
-      // {
-      //   path: 'component',
-      //   loadChildren: () => import('./demo/ui-element/ui-basic.module').then((m) => m.UiBasicModule)
-      // },
+      {
+        path: 'products',
+       loadChildren: () => import('./demo/products/products.module').then(m => m.ProductsModule)
+      },
       // {
       //   path: 'chart',
       //   loadComponent: () => import('./demo/chart-maps/core-apex.component')

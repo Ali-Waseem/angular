@@ -14,7 +14,7 @@ export default class DashAnalyticsComponent {
   cards = [
     {
       background: 'bg-c-blue',
-      title: 'Orders Received',
+      title: 'Total Products',
       icon: 'icon-shopping-cart',
       text: 'Completed Orders',
       number: '486',
@@ -22,15 +22,15 @@ export default class DashAnalyticsComponent {
     },
     {
       background: 'bg-c-green',
-      title: 'Total Sales',
+      title: 'Top Category',
       icon: 'icon-tag',
-      text: 'This Month',
+      text: 'Electronics',
       number: '1641',
       no: '213'
     },
     {
       background: 'bg-c-yellow',
-      title: 'Revenue',
+      title: 'Average Price',
       icon: 'icon-repeat',
       text: 'This Month',
       number: '$42,56',

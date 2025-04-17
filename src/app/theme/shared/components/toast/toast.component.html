@@ -1,0 +1,6 @@
+
+<div class="d-flex toast align-items-center justify-content-center text-white bg-success" [ngClass]="{ 'bg-success': type === 'success', 'bg-danger': type === 'error' }" *ngIf="show">
+  <div class="toast-body">
+    {{ message }}
+  </div>
+</div>

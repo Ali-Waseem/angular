@@ -1,3 +1,2 @@
-<router-outlet>
-  <app-spinner></app-spinner>
-</router-outlet>
+<app-loading-screen *ngIf="loadingService.isLoading()" />
+<router-outlet></router-outlet>

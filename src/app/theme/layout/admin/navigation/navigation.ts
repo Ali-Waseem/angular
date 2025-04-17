@@ -23,14 +23,14 @@ export const NavigationItems: NavigationItem[] = [
     id: 'dashboard',
     title: 'Dashboard',
     type: 'item',
-    url: '/analytics',
+    url: '/dashboard',
     icon: 'feather icon-home'
   },
   {
     id: 'products',
     title: 'Products',
     type: 'item',
-    url: '/analytics',
+    url: '/products',
     icon: 'feather icon-server'
   },
   // {
